@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gmall-auth-server" />
+        <module name="gmall-cart" />
+        <module name="gmall-common" />
+        <module name="gmall-coupon" />
+        <module name="gmall-gateway" />
+        <module name="gmall-member" />
+        <module name="gmall-order" />
+        <module name="gmall-product" />
+        <module name="gmall-search" />
+        <module name="gmall-secskill" />
+        <module name="gmall-third-party" />
+        <module name="gmall-ware" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gmall-auth-server" target="1.8" />
+      <module name="gmall-cart" target="1.8" />
+      <module name="gmall-common" target="1.8" />
+      <module name="gmall-coupon" target="1.8" />
+      <module name="gmall-gateway" target="1.8" />
+      <module name="gmall-member" target="1.8" />
+      <module name="gmall-order" target="1.8" />
+      <module name="gmall-product" target="1.8" />
+      <module name="gmall-search" target="1.8" />
+      <module name="gmall-secskill" target="1.8" />
+      <module name="gmall-third-party" target="1.8" />
+      <module name="gmall-ware" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gmall-auth-server" options="-parameters" />
+      <module name="gmall-cart" options="-parameters" />
+      <module name="gmall-coupon" options="-parameters" />
+      <module name="gmall-gateway" options="-parameters" />
+      <module name="gmall-member" options="-parameters" />
+      <module name="gmall-order" options="-parameters" />
+      <module name="gmall-product" options="-parameters" />
+      <module name="gmall-search" options="-parameters" />
+      <module name="gmall-secskill" options="-parameters" />
+      <module name="gmall-third-party" options="-parameters" />
+      <module name="gmall-ware" options="-parameters" />
+    </option>
+  </component>
+</project>
