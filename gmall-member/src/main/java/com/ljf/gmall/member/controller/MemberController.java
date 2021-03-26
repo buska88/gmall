@@ -79,16 +79,6 @@ public class MemberController {
         }
     }
 
-    @PostMapping(value = "/weixin/login")
-    public R weixinLogin(@RequestParam("accessTokenInfo") String accessTokenInfo) {
-
-        MemberEntity memberEntity = memberService.login(accessTokenInfo);
-        if (memberEntity != null) {
-            return R.ok().setData(memberEntity);
-        } else {
-            return R.error(BizCodeEnume.LOGINACCT_PASSWORD_EXCEPTION.getCode(),BizCodeEnume.LOGINACCT_PASSWORD_EXCEPTION.getMessage());
-        }
-    }
 
 
     /**

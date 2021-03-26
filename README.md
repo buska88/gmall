@@ -1,37 +1,42 @@
-# gmall
-
-#### 介绍
-商城项目学习
-
-#### 软件架构
-软件架构说明
+# Gmall电商项目
 
 
-#### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 项目简介
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+Gmall电商项目是基于springboot+spring cloud+spring cloud alibaba+Mybaits plus实现的前后端分离的分布式电商项目，由前台商城系统和后台管理系统组成。前台商城系统实现了商品检索、登录认证、详情展示、购物车、订单结算、支付、秒杀等功能。后台管理系统实现了商品分类、属性管理、商品管理、仓库管理、商品上架等功能。项目采用微服务架构，分为商品服务、会员服务、优惠服务、订单服务、仓储服务、认证服务、购物车服务、网关服务、检索服务、秒杀服务等模块。
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 微服务模块
+
+
+
+* gmall-common：公共模块，被其他微服务模块依赖，定义了常用工具类和常量，导入了公共的依赖
+* gmall-auth-server：提供登录、注册、社交登录服务
+* gmall-cart：购物车服务
+* gmall-coupon：优惠券服务
+* gmall-gateway：整个项目的网关
+* gmall-member：会员服务
+* gmall-order：订单服务，实现了验价，保存订单数据，锁库存功能
+* gmall-product：实现了后台的商品管理与前台商品相关服务
+* gmall-search：实现了商品的检索服务
+* gmall-secskill：秒杀服务
+* gmall-thirdparty：第三方服务，提供对象云存储(OSS)等功能
+* gamll-ware：库存服务
+
+
+
+## 技术选型
+
+* SpringBoot：容器与mvc框架
+* MyBatis-Plus：操作持久层
+* SpringCloud：项目中使用了gateway作为统一网关，使用openfeign实现远程调用
+* SpringCloudAlibaba：项目中使用nacos作为服务注册与发现中心
+* Elasticsearch：搜索引擎，用于商品检索
+* RabbitMQ：消息队列，项目中用于库存解锁，秒杀等功能
+* Redis：缓存功能
+* Docker：应用容器引擎
+* Vue：后台管理系统的前端页面
+* thymeleaf：模板引擎
+* Nginx：搭建域名访问环境
