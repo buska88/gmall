@@ -23,7 +23,7 @@ Gmall电商项目是基于SpringBoot+SpringCloud+Mybatis-Plus实现的前后端�
 * gmall-search：实现了商品的检索服务
 * gmall-secskill：秒杀服务
 * gmall-thirdparty：第三方服务，提供对象云存储(OSS)等功能
-* gamll-ware：库存服务
+* gmall-ware：库存服务
 
 
 
@@ -31,12 +31,12 @@ Gmall电商项目是基于SpringBoot+SpringCloud+Mybatis-Plus实现的前后端�
 
 * SpringBoot：容器与mvc框架
 * MyBatis-Plus：操作持久层
-* SpringCloud：项目中使用了gateway作为统一网关，使用openfeign实现远程调用
-* SpringCloudAlibaba：项目中使用nacos作为服务注册与发现中心
-* Elasticsearch：搜索引擎，用于商品检索
+* SpringCloud：项目中使用了Gateway作为统一网关，使用OpenFeign实现远程调用
+* SpringCloudAlibaba：项目中使用Nacos作为服务注册与发现中心
+* ElasticSearch：搜索引擎，用于商品检索
 * RabbitMQ：消息队列，项目中用于库存解锁，秒杀等功能
 * Redis：缓存功能
 * Docker：应用容器引擎
 * Vue：后台管理系统的前端页面
-* thymeleaf：模板引擎
+* Thymeleaf：模板引擎
 * Nginx：搭建域名访问环境
